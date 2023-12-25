@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+#first-page {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #14131B;
+    background-color: transparent;
+    font-size: x-large;
+    border: 0;
+    display: inline;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5%;
+    width: 0%;
+    bottom: 20%;
+    background-color: #17356624;
+    transition: all 256ms;
+}
+
+.btn-menu:hover::after {
+    width: 100%;
+}
+
+#header-bas {
+    height: 85%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#description-container {
+    height: 80%;
+    width: 50%;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 34px #f5f5f5,
+        -20px -20px 34px #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#description h1 {
+    font-size: 4em
+}
+
+#description p {
+    font-size: 2.75em
+}
+
+#description {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-description-adresse {
+    border-radius: 5px;
+    background-color: #d6d7d63a;
+    border: 0;
+    height: 40%;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #14131B;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#informations-description {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.decoration {
+    height: 0.5%;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.decoration-description {
+    height: 100%;
+    width: 33%;
+}
+
+.description-1 {
+    background-color: #173566;
+}
+
+.description-2 {
+    background-color: #7D2535;
+}
+
+#marquee-1 {
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    background: blue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.marquee-1-img {
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+    animation: marquee-1-animation 15s ease infinite;
+    z-index: 2;
+}
+
+@keyframes marquee-1-animation {
+    0% {
+        transform: translateX(-500px)
+    }
+
+    33% {
+        transform: translateX(-1000px);
+    }
+
+    66% {
+        transform: translateX(-1500px);
+    }
+
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+.btn-description-adresse {
+    transition: all 256ms;
+}
+
+.btn-description-adresse:hover {
+    transform: translateY(-5px);
+}
+
+#googleMapEmbed {
+    height: 500px;
+    width: 500px;
+    z-index: 10;
+    transition: all 256ms;
+}
+
+.googleMapEmbedInvisible {
+    opacity: 0;
+}
+
+#pub1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+
+#second-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#gallerie {
+    height: 80%;
+    width: 50%;
+    background-color: transparent;
+}
+
+.photogallerie {
+    height: 33%;
+    width: 33%;
+    object-fit: cover;
+}
+
+#second-page-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    border-radius: 0px;
+    font-size: 2.5em;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 34px #f5f5f5,
+        -20px -20px 34px #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numtel {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+
+#numtelequipe {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.decorationdevis {
+    bottom: 10%;
+}
+
+.photogallerie {
+    transition: all 256ms;
+    object-fit: cover;
+}
+
+.spanGallerieDespawn {
+    opacity: 0;
+}
+
+.spanGallerieSpawn {
+    opacity: 1;
+}
+
+#troisieme-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosServices {
+    height: 80%;
+    width: 80%;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 34px #f5f5f5,
+        -20px -20px 34px #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.decorationns {
+    height: 0.5%;
+}
+
+#nsservices {
+    height: 99.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nosServicesContainer {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ns {
+    height: 40%;
+    width: 50%;
+    border-left: #14131b96 solid 5px;
+    color: #14131B;
+    padding-left: 2.5%;
+    font-size: 1.7em;
+}
+
+#quatrieme-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#NousContacter {
+    height: 90%;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 34px #f5f5f5,
+        -20px -20px 34px #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#nsccicontainer {
+    height: 70%;
+    display: flex;
+}
+
+.NousContacterBox {
+    height: 80%;
+}
+
+.NousContacterBox1 {
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.NousContacterBox2 {
+    width: 60%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    outline: none;
+}
+
+.inputNCB {
+    background-color: transparent;
+    border: 0;
+    border-bottom: #14131b96 2px solid;
+    height: 10%;
+    width: 50%;
+}
+
+.inputNCB {
+    background-color: transparent;
+    border: 0;
+    border-bottom: #14131b96 2px solid;
+    height: 10%;
+    width: 50%;
+    font-size: 1em;
+}
+
+.inputNCBMessage {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border: #14131b96 2px solid;
+    border-radius: 10px;
+    display: flex;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+#containerImages {
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImagesImg {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.containerImagesImg1 {
+    height: 70%;
+}
+
+#containerImagesTitre {
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #14131B;
+}
+
+footer {
+    height: 30%;
+    width: 100%;
+    background-color: #d6d7d63a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerContainer {
+    height: 80%;
+    width: 40%;
+    color: #14131bc5;
+    border-left: #14131bc5 5px solid;
+}
+
+.imgsv {
+    height: 10%;
+    width: 10%;
+    margin-left: 15%;
+}
+
+.footerContainer1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.footerContainer2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
