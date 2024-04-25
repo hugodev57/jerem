@@ -26,14 +26,13 @@ header {
     align-items: center;
 }
 
-#title {
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+#logoHeader {
+    height: 125px;
 }
 
 .menu {
     height: 80%;
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +76,7 @@ header {
 }
 
 #description-container {
+    font-size: 14px;
     height: 80%;
     width: 50%;
     border-radius: 0px;
@@ -95,7 +95,7 @@ header {
 }
 
 #description p {
-    font-size: 2.75em
+    font-size: 2.90em
 }
 
 #description {
@@ -108,13 +108,13 @@ header {
 
 .btn-description-adresse {
     border-radius: 5px;
+    font-size: 2em;
     background-color: #d6d7d63a;
     border: 0;
     height: 40%;
     width: 40%;
     font-family: Arial, Helvetica, sans-serif;
     color: #14131B;
-    font-size: x-large;
     cursor: pointer;
 }
 
@@ -153,7 +153,6 @@ header {
     height: 500px;
     width: 500px;
     border-radius: 30px;
-    background: blue;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -211,6 +210,8 @@ header {
     color: #787878;
 }
 
+/* ----------------- */
+
 #second-page {
     height: 100vh;
     width: 100vw;
@@ -220,7 +221,7 @@ header {
 }
 
 #gallerie {
-    height: 80%;
+    height: 70%;
     width: 50%;
     background-color: transparent;
 }
@@ -239,11 +240,23 @@ header {
     justify-content: space-between;
     width: 40%;
     border-radius: 0px;
-    font-size: 2.5em;
+    font-size: 14px;
     background: #FFFFFF;
     box-shadow: 20px 20px 34px #f5f5f5,
         -20px -20px 34px #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#UnDevis {
+    font-size: 2em;
+}
+
+#UnDevis>h1 {
+    font-size: 2em;
+}
+
+#UnDevis>p {
+    font-size: 1.25em;
 }
 
 .numtel {
@@ -275,7 +288,10 @@ header {
     opacity: 1;
 }
 
+/* ----------------- */
+
 #troisieme-page-container {
+    font-size: 14px;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -286,6 +302,7 @@ header {
 #nosServices {
     height: 80%;
     width: 80%;
+    font-size: 1.1em;
     border-radius: 0px;
     background: #FFFFFF;
     box-shadow: 20px 20px 34px #f5f5f5,
@@ -323,6 +340,8 @@ header {
     padding-left: 2.5%;
     font-size: 1.7em;
 }
+
+/* ----------------- */
 
 #quatrieme-page-container {
     height: 100vh;
@@ -430,6 +449,7 @@ input {
 footer {
     height: 30%;
     width: 100%;
+    font-size: 16px;
     background-color: #d6d7d63a;
     display: flex;
     justify-content: space-around;
@@ -462,4 +482,71 @@ footer {
 .footerContainer2 {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        height: 15%;
+    }
+
+    #container {
+        width: 80%;
+    }
+
+    #logoHeader {
+        height: 100px;
+    }
+
+    .menu {
+        width: 70%;
+
+    }
+
+    #description h1 {
+        font-size: 3.5em;
+    }
+
+    #description p {
+        font-size: 2.6em;
+    }
+
+    .btn-description-adresse {
+        font-size: 1.6em;
+        height: 35%;
+        width: 35%;
+    }
+
+    #description-container {
+        height: 80%;
+        width: 60%;
+    }
+
+    #marquee-1 {
+        height: 400px;
+        width: 400px;
+    }
+
+    #gallerie {
+        height: 60%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .photogallerie3,
+    .photogallerie6,
+    .photogallerie9 {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #second-page-container {
+        width: 50%;
+    }
+
+    #nosServices {
+        font-size: 0.9em;
+    }
 }
